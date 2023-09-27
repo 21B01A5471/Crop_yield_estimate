@@ -37,7 +37,7 @@ TransDetFactor_CalendarDate = st.number_input("TransDetFactor_CalendarDateSeedli
 if st.button("Predict Yield"):
     # Create a DataFrame from user inputs
     user_data = pd.DataFrame({
-        'Basal_DAP': [BasalDAP],
+        'Basal_DAP': [Basal_DAP],
         'Acree': [Acre],
         'SeedingSowingTransplanting': [SeedingSowingTransplanting_2022],
         'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDateSeedlingAgeIrrigWaterAvailabilityLaborAvailability]
