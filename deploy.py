@@ -38,9 +38,9 @@ if st.button("Predict Yield"):
     # Create a DataFrame from user inputs
     user_data = pd.DataFrame({
         'Basal_DAP': [Basal_DAP],
-        'Acree': [Acre],
-        'SeedingSowingTransplanting': [SeedingSowingTransplanting_2022],
-        'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDateSeedlingAgeIrrigWaterAvailabilityLaborAvailability]
+        'Acree': [Acree],
+        'SeedingSowingTransplanting': [SeedingSowingTransplanting],
+        'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDate]
     })
 
     # Make predictions on user data (replace this with your actual prediction code)
