@@ -31,7 +31,7 @@ st.subheader("Enter Crop Information:")
 Basal_DAP = st.number_input("BasalDAP", min_value=0.0, max_value=1.0, step=0.01)
 Acree = st.number_input("Acre", min_value=0.0, max_value=1000.0, step=1.0)
 SeedingSowingTransplanting = st.number_input("SeedingSowingTransplanting_2022-07-18", min_value=0.0, max_value=1.0, step=0.01)
-TransDetFactor_CalendarDate = st.number_input("TransDetFactor_CalendarDate SeedlingAge IrrigWaterAvailability LaborAvailability", min_value=0.0, max_value=1.0, step=0.01)
+TransDetFactor_CalendarDate = st.number_input("TransDetFactor_CalendarDateSeedlingAgeIrrigWaterAvailabilityLaborAvailability", min_value=0.0, max_value=1.0, step=0.01)
 
 # Predict button
 if st.button("Predict Yield"):
@@ -40,7 +40,7 @@ if st.button("Predict Yield"):
         'Basal_DAP': [BasalDAP],
         'Acree': [Acre],
         'SeedingSowingTransplanting': [SeedingSowingTransplanting_2022],
-        'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDate SeedlingAge IrrigWaterAvailability LaborAvailability]
+        'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDateSeedlingAgeIrrigWaterAvailabilityLaborAvailability]
     })
 
     # Make predictions on user data (replace this with your actual prediction code)
