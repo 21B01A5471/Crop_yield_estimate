@@ -39,7 +39,7 @@ if st.button("Predict Yield"):
     user_data = pd.DataFrame({
         'Basal_DAP': [BasalDAP],
         'Acree': [Acre],
-        'SeedingSowingTransplanting': [SeedingSowingTransplanting_2022-07-18],
+        'SeedingSowingTransplanting': [SeedingSowingTransplanting_2022],
         'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDate SeedlingAge IrrigWaterAvailability LaborAvailability]
     })
 
