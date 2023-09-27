@@ -28,19 +28,19 @@ st.image(image, use_column_width=True)
 
 # Input fields for user to enter crop-related information
 st.subheader("Enter Crop Information:")
-Basal_DAP = st.number_input("Basal DAP", min_value=0.0, max_value=1.0, step=0.01)
-Acre = st.number_input("Acre", min_value=0.0, max_value=1000.0, step=1.0)
-SeedingSowingTransplanting = st.number_input("Seeding Sowing Transplanting", min_value=0.0, max_value=1.0, step=0.01)
-TransDetFactor_CalendarDate = st.number_input("TransDetFactor CalendarDate", min_value=0.0, max_value=1.0, step=0.01)
+Basal_DAP = st.number_input("BasalDAP", min_value=0.0, max_value=1.0, step=0.01)
+Acree = st.number_input("Acre", min_value=0.0, max_value=1000.0, step=1.0)
+SeedingSowingTransplanting = st.number_input("SeedingSowingTransplanting_2022-07-18", min_value=0.0, max_value=1.0, step=0.01)
+TransDetFactor_CalendarDate = st.number_input("TransDetFactor_CalendarDate SeedlingAge IrrigWaterAvailability LaborAvailability", min_value=0.0, max_value=1.0, step=0.01)
 
 # Predict button
 if st.button("Predict Yield"):
     # Create a DataFrame from user inputs
     user_data = pd.DataFrame({
-        'Basal_DAP': [Basal_DAP],
-        'Acre': [Acre],
-        'SeedingSowingTransplanting': [SeedingSowingTransplanting],
-        'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDate]
+        'Basal_DAP': [BasalDAP],
+        'Acree': [Acre],
+        'SeedingSowingTransplanting': [SeedingSowingTransplanting_2022-07-18],
+        'TransDetFactor_CalendarDate': [TransDetFactor_CalendarDate SeedlingAge IrrigWaterAvailability LaborAvailability]
     })
 
     # Make predictions on user data (replace this with your actual prediction code)
